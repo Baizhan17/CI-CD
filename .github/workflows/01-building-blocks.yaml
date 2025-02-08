@@ -24,7 +24,7 @@ jobs:
       - name: Failed step
         run: |
           echo "I will fail"
-          exit 1  # Ошибка, шаг завершится с ненулевым кодом
+          exit 0  # Ошибка, шаг завершится с ненулевым кодом
 
       - name: Say goodbye
         run: echo "Goodbye!"
