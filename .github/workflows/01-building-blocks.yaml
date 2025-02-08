@@ -1,11 +1,4 @@
-name:01 - Building Blocks
-on:push
-
-jobs:
-	echo-hello:
-		runs-on:ubuntu-latest
-		steps:
-			-run:echo name: 01 - Building Blocks
+name: 01 - Building Blocks
 
 on:
   push:
@@ -24,8 +17,7 @@ jobs:
       - name: Failed step
         run: |
           echo "I will fail"
-          exit 0  # Ошибка, шаг завершится с ненулевым кодом
+          exit 1  # Этот шаг вызовет failure
 
       - name: Say goodbye
         run: echo "Goodbye!"
-
