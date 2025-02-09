@@ -7,8 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code  # Space after '-'
-        uses: actions/checkout@v4
-
-      - name: Print folders
-        run: ls  # Fixed 'ls-something'
+      -name: Checkout Code
+      uses: actions/checkout@v4
+      -name: Print folders
+      run: ls
